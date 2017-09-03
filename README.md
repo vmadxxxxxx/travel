@@ -1,2 +1,2 @@
-# travel
-Website about travels
+# Website about travels
+By Alyona Fomenkova
