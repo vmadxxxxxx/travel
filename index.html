@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet" title="roboto">
+    <title>Проба смены изображений</title>
+  </head>
+  <body>
+						<script type="text/javascript">
+    						function setCardImage(country) {
+								var images = new Array();
+								var index = Math.round(Math.random() * 2);
+								var imageId = "image_" + country;
+								var path = './images/' + country + '/titles/';
+	    						images[0] = path + 'title_1.jpg';
+    							images[1] = path + 'title_2.jpg';
+    							images[2] = path + 'title_3.jpg';
+        						document.getElementById(imageId).src = images[index];
+  							}   
+						</script>
+
+    <div class="cards_grid">
+        <ul>
+			<li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_vietnam" src=""/>				
+						<script> setCardImage("vietnam"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/vn.png">
+                        </div>
+                        <h3 class="card_title">Вьетнам</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_indonesia" src=""/>
+						<script> setCardImage("indonesia"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/in.png">
+                        </div>
+                        <h3 class="card_title">Индонезия</h3>
+                    </div>
+                </a>
+            </li>
+			<li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_cambodia" src=""/>				
+						<script> setCardImage("cambodia"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/kh.png">
+                        </div>
+                        <h3 class="card_title">Камбоджа</h3>
+                    </div>
+                </a>
+            </li>
+			<li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_malaysia" src=""/>				
+						<script> setCardImage("malaysia"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/my.png">
+                        </div>
+                        <h3 class="card_title">Малайзия</h3>
+                    </div>
+                </a>
+            </li>
+			<li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_singapore" src=""/>				
+						<script> setCardImage("singapore"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/sg.png">
+                        </div>
+                        <h3 class="card_title">Сингапур</h3>
+                    </div>
+                </a>
+            </li>
+			<li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_thailand" src=""/>
+						<script> setCardImage("thailand"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/th.png">
+                        </div>
+                        <h3 class="card_title">Таиланд</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://ya.ru">
+                    <div class="card_container">
+                        <img class="card_image" id="image_philippines" src=""/>
+						<script> setCardImage("philippines"); </script>
+                        <div>
+                            <div class="card_overlay"/>
+                        </div>
+                        <div>
+                            <div class="card_flag">
+                            <img src="images/flags/ph.png">
+                        </div>
+                        <h3 class="card_title">Филиппины</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+  </body>
+</html>
